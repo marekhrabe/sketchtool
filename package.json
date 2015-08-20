@@ -1,0 +1,18 @@
+{
+  "name": "sketchtool",
+  "version": "1.4.0",
+  "description": "SketchTool binary",
+  "bin": "sketchtool/bin/sketchtool",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marekhrabe/sketchtool"
+  },
+  "bugs": {
+    "url": "https://github.com/marekhrabe/sketchtool/issues"
+  },
+  "author": "Bohemian Coding (http://bohemiancoding.com/)",
+  "maintainers": [
+    "Marek Hrabe <marekhrabe@me.com> (https://github.com/marekhrabe)"
+  ]
+}
