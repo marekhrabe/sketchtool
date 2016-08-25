@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
-cp bin/sketchmigrate /usr/local/bin/
-echo Installed `sketchmigrate --version` in "/usr/local/bin"
+base=`dirname "$0"`
 
-cp bin/sketchtool /usr/local/bin/
+cp "$base/bin/sketchmigrate" /usr/local/bin/
+echo Installed `"$base/bin/sketchmigrate" --version` in "/usr/local/bin"
+
+cp "$base/bin/sketchtool" /usr/local/bin/
 mkdir -p /usr/local/share/sketchtool
-cp -r share/sketchtool/resources.bundle /usr/local/share/sketchtool/
-echo Installed `sketchtool --version` in "/usr/local/bin"
+cp -r "$base/share/sketchtool/resources.bundle" /usr/local/share/sketchtool/
+echo Installed `"$base/bin/sketchtool" --version` in "/usr/local/bin"
 
